@@ -9,6 +9,11 @@ kind get kubeconfig -n adopted > kcfg
 chmod 0400 kcfg # set minimum attributes to kubeconfig
 ~~~
 
+Install k0rdent:
+~~~bash
+helm install kcm oci://ghcr.io/k0rdent/kcm/charts/kcm --version 0.1.0 -n kcm-system --create-namespace
+~~~
+
 Switch to master k0rdent clusterCreate adopted-credential resources using helm chart:
 ~~~bash
 helm upgrade --install adopted-credential oci://ghcr.io/k0rdent/catalog/charts/adopted-credential \
@@ -44,6 +49,7 @@ helm upgrade --install $EXAMPLE oci://ghcr.io/k0rdent/catalog/charts/kgst \
 # Deploy service using multiclusterservice
 # Note: there is complete configurable values list in $EXAMPLE/values-orig.yaml folder.
 kubectl apply -f $EXAMPLE/mcs.yaml
+# This takes some time to deploy
 KUBECONFIG=kcfg ./scripts/wait_for_deployment.sh
 
 # Test webpage if exposed
