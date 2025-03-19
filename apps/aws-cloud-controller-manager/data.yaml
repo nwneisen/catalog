@@ -1,5 +1,4 @@
-tags:
-  - Monitoring
+tags: []
 title: "AWS Cloud Controller Manager"
 summary: "The AWS cloud provider provides the interface between a Kubernetes cluster and AWS service APIs"
 logo: "https://kubernetes.github.io/cloud-provider-aws/assets/images/aws_logo.svg"
