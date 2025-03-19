@@ -1,0 +1,6 @@
+helm:
+  repository:
+    url: https://operator.min.io
+  charts:
+    - name: minio
+      version: 14.1.2
