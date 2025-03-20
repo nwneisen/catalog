@@ -11,7 +11,7 @@ support_link: https://github.com/minio/minio/issues
 install_code: |
   ~~~bash
   helm upgrade --install minio oci://ghcr.io/k0rdent/catalog/charts/kgst -n kcm-system \
-    --set "helm.repository.url=https://operator.min.io" \
+    --set "helm.repository.url=https://charts.bitnami.com/bitnami" \
     --set "helm.charts[0].name=minio" \
     --set "helm.charts[0].version=14.1.2"
   ~~~

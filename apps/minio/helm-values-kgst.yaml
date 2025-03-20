@@ -1,6 +1,6 @@
 helm:
   repository:
-    url: https://operator.min.io
+    url: https://charts.bitnami.com/bitnami
   charts:
     - name: minio
       version: 14.1.2
