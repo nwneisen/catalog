@@ -1,7 +1,7 @@
 tags: []
 title: "AWS Cloud Controller Manager"
 summary: "The AWS cloud provider provides the interface between a Kubernetes cluster and AWS service APIs"
-logo: "https://kubernetes.github.io/cloud-provider-aws/assets/images/aws_logo.svg"
+logo: "./assets/aws_logo.svg"
 description: |
   The AWS cloud provider provides the interface between a Kubernetes cluster and AWS service APIs.
   This project allows a Kubernetes cluster to provision, monitor and remove AWS resources necessary for operation of the cluster.

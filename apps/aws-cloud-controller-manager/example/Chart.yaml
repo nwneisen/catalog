@@ -1,0 +1,8 @@
+apiVersion: v2
+name: minio
+type: application
+version: 0.0.8
+dependencies:
+  - name: minio
+    version: 0.0.8
+    repository: https://kubernetes.github.io/cloud-provider-aws
