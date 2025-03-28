@@ -1,0 +1,6 @@
+helm:
+  repository:
+    url: ttps://kubernetes-sigs.github.io/node-feature-discovery/charts
+  charts:
+    - name: node-feature-discovery
+      version: 0.16.1
