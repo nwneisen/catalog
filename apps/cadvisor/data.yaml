@@ -1,6 +1,6 @@
 tags:
   - Monitoring
-title: "CAdvisor"
+title: "cAdvisor"
 summary: "cAdvisor (Container Advisor) provides container users an understanding of the resource usage and performance characteristics of their running containers."
 logo: ./assets/cadvisor.png
 description: |
