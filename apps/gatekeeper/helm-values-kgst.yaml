@@ -1,6 +1,0 @@
-helm:
-  repository:
-    url: https://open-policy-agent.github.io/gatekeeper/charts/
-  charts:
-    - name: gatekeeper
-      version: 3.17.1
