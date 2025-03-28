@@ -1,7 +1,10 @@
 #!/bin/bash
 set -euo pipefail
 
-while true; do
+TIMEOUT=10*60  # 10 minutes
+SECONDS=0 # Reset the timer built in to bash
+
+while (( SECONDS < ${TIMEOUT})); do
     pods=$(KUBECONFIG="kcfg_$TEST_MODE" kubectl get pods -n "$NAMESPACE" --no-headers 2>&1)
     echo "$TEST_MODE/$NAMESPACE"
     echo "$pods"  # Print the pod list to stdout
